@@ -1,0 +1,14 @@
+h1, p {
+    font-family: Lato;
+  }
+  
+  .style_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-div {
+    width: 30vw;
+  }

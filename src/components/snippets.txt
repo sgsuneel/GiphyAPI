@@ -1,0 +1,44 @@
+render() {
+    return (
+      <Router>
+        <Navbar />
+        <div className="container">
+          <span className="row">
+            <Switch>
+              <Route
+                exact
+                path="/"
+                render={() => (
+                  <Fragment>
+                    <span className="col">
+                      <DisplayClock />
+                    </span>
+
+                    <span className="col">
+                      <DisplayDate />
+                    </span>
+                  </Fragment>
+                )}
+              />
+              <Route exact path="/giphy" component={Giphy} />
+            </Switch>
+          </span>
+        </div>
+      </Router>
+    );
+  }
+
+    <br />
+        <form className="form">
+          <input
+            type="text"
+            name="text"
+            placeholder="Enter search term"
+            onChange="this.onChange"
+          />&nbsp;
+          <input
+            type="submit"
+            value="Search"
+            className="btn btn-dark btn-block"
+          />
+        </form>
